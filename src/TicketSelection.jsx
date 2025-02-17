@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
-import './app.css';
 import LogoIcon from './assets/Logo.svg'
 import TiczWord from './assets/ticz.png'
 

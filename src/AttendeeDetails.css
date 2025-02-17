@@ -1,0 +1,103 @@
+/* Updated CSS for AttendeeDetails to keep the image contained and allow full box upload click */
+.attendee-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #0D1B2A;
+    color: #FAFAFA;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .upload-box {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #FAFAFA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .upload-label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .upload-placeholder {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .uploaded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .back-button, .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1B263B;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover, .submit-button:hover {
+    background-color: #415A77;
+  }

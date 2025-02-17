@@ -1,0 +1,118 @@
+/* TicketReadyScreen.css */
+.ticket-ready-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #001f2d;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.nav-links .active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.my-tickets {
+    background-color: #fff;
+    color: #001f2d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 5px;
+    background: linear-gradient(to right, #00bcd4 33%, #1a3b5d 33%);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.ticket-card {
+    background-color: #013d53;
+    border: 2px solid #00aabb;
+    border-radius: 1rem;
+    width: 300px;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.ticket-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.ticket-details {
+    margin-top: 1rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.barcode {
+    margin-top: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.buttons button {
+    background-color: #00aabb;
+    color: #001f2d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button.secondary {
+    background-color: transparent;
+    border: 2px solid #00aabb;
+    color: #00aabb;
+}
+
+@media (max-width: 600px) {
+    .ticket-card {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
